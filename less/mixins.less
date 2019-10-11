@@ -1,9 +1,30 @@
 // Mixins in here
 .flexjustify(@justify){
     display:flex;
-    justify-content: space-evenly;
+    justify-content: @justify;
 }
+
 .flexcolumn(){
     display:flex;
     flex-direction: column;
 }
+
+.center(){
+    justify-content: center;
+    align-items: center;   
+    text-align: center; 
+}
+
+.btn-layout(@bg-color: black, @width: 200px, @txt-color: white){
+    display: block;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@txt-color;
+    padding: 10px;
+}
+

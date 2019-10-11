@@ -1,7 +1,6 @@
 // Navigation Styles here
 header{
     .flexcolumn();
-    //max-width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     .navbar{
@@ -12,6 +11,9 @@ header{
         border-bottom: 2px dashed @silver;
         div{
             margin:2%;
+        }
+        @media @phone{
+            flex-direction: column;
         }
         .navigation{
             .flexjustify(space-evenly);
